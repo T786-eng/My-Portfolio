@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-inter: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #0c0c0e; }
+::-webkit-scrollbar-thumb { background: #7c6cfc; border-radius: 2px; }
+::selection { background: rgba(124,108,252,0.2); color: #a78bfa; }
+
+body { font-family: var(--font-inter), sans-serif; }
+
+/* Grid background overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Ticker - DIAGONAL slanted like Mohit */
+.ticker-wrap { overflow: hidden; position: relative; }
+.ticker-track { display: flex; width: max-content; animation: ticker 30s linear infinite; }
+.ticker-track:hover { animation-play-state: paused; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Gradient text */
+.text-gradient { background: linear-gradient(135deg, #7c6cfc 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* Code block styling */
+.code-block { background: #0d0d10; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; font-family: var(--font-mono); }
+.code-block .dot { width: 10px; height: 10px; border-radius: 50%; }

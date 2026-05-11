@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="20" fill="#1a1a2e"/>
+  <text x="100" y="60" text-anchor="middle" fill="#1F70C1" font-size="16" font-family="Arial" font-weight="bold">IBM</text>
+  <rect x="40" y="80" width="120" height="60" rx="10" fill="#1F70C1" opacity="0.15" stroke="#1F70C1" stroke-width="2"/>
+  <text x="100" y="115" text-anchor="middle" fill="#1F70C1" font-size="11" font-family="Arial">AI Fundamentals</text>
+  <text x="100" y="175" text-anchor="middle" fill="#666" font-size="10" font-family="Arial">SkillsBuild · Jan 2026</text>
+</svg>
